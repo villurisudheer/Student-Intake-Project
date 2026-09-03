@@ -1,0 +1,15 @@
+{
+  "name": "aacharya-student-intake",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Public student information intake form for Aacharya Learning Academy",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "engines": {
+    "node": ">=22 <25"
+  },
+  "license": "UNLICENSED"
+}
