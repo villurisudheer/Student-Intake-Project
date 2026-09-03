@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: aacharya-student-intake
+    runtime: node
+    plan: 0.5c-512mb
+    buildCommand: ""
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 22.22.0
+      - key: DATA_DIR
+        value: /var/data
+      - key: ADMIN_SYNC_KEY
+        sync: false
+    disk:
+      name: intake-data
+      mountPath: /var/data
+      sizeGB: 1
